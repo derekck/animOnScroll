@@ -1,0 +1,52 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Derek C K, OK.</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width">
+	<style type="text/css">
+		body {
+			height: 2000px;
+		}
+		.box {
+			width: 100px;
+			height: 100px;
+			background: red;
+			position: fixed;
+			top: 200px;
+			left: 50%;
+			margin-left: -50px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="box"></div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="../src/animOnScroll.js"></script>
+<script>
+	$(function(){
+		$('.box').animOnScroll({animations:[{
+			from: {
+				rotate: 0,
+				top: 0
+			},
+			to: {
+				rotate: 360,
+				top: 300
+			},
+			startOn: 0,
+			endOn: 1000
+		}]});
+	});
+</script>
+</body>
+</html>
